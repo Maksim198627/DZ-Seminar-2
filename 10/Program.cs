@@ -1,28 +1,28 @@
 ﻿string str = "";
-int a;
+int n;
 
 Console.WriteLine("");
 do
 {
     Console.Write("Введите число: ");
-    while (int.TryParse(str = Console.ReadLine()!, out a) == false) 
+    while (int.TryParse(str = Console.ReadLine()!, out n) == false) 
     {
 
         Console.WriteLine("err: несоответствие типу integer!");
         Console.Write("Введите число: ");
     }
 
-    a = (int)Math.Abs(int.Parse(str));
-    if (a < 100 || a > 999)
+    n = (int)Math.Abs(int.Parse(str));
+    if (n < 100 || n > 999)
     {
 
         Console.WriteLine("err: не трехзначное число!");
 
     }
-} while (a < 100 || a > 999);
+} while (n < 100 || n > 999);
 
-a /= 10;
-a %= 10;
+n /= 10;
+n %= 10;
 
 Console.WriteLine("");
-Console.WriteLine("Цифра 2-го разряда: [" + a + "]");
+Console.WriteLine("Цифра 2-го разряда: [" + n + "]");

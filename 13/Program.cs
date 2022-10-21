@@ -1,18 +1,18 @@
 ﻿string str = "";
-int a;
+int n;
 List<int> all = new List<int>();
 
 Console.WriteLine("");
 Console.Write("Введите 3-х значное  число: ");
-while (int.TryParse(str = Console.ReadLine()!, out a) == false)
+while (int.TryParse(str = Console.ReadLine()!, out n) == false)
 {
 
     Console.WriteLine("Ошибка: несоответствие типу!");
     Console.Write("Введите число: ");
 }
 
-a = int.Parse(str);
-all = IntToList(a);
+n = int.Parse(str);
+all = IntToList(n);
 
 Console.WriteLine("");
 if (all.Count > 2) Console.WriteLine("Цифра 3-го разряда: [" + all[2] + "]");
