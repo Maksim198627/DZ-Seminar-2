@@ -2,7 +2,6 @@
 int n;
 List<int> all = new List<int>();
 
-Console.WriteLine("");
 Console.Write("Введите 3-х значное  число: ");
 while (int.TryParse(str = Console.ReadLine()!, out n) == false)
 {
@@ -14,7 +13,6 @@ while (int.TryParse(str = Console.ReadLine()!, out n) == false)
 n = int.Parse(str);
 all = IntToList(n);
 
-Console.WriteLine("");
 if (all.Count > 2) Console.WriteLine("Цифра 3-го разряда: [" + all[2] + "]");
 else Console.WriteLine("Цифра 3-го разряда не найдена.");
 

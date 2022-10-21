@@ -1,6 +1,5 @@
 ﻿string str = ""; 
 int n; 
-
 Console.WriteLine("");
 Console.WriteLine("Понедельник: 1");
 Console.WriteLine("Вторник: 2");
@@ -30,7 +29,6 @@ do
 } 
 while (n < 1 || n > 7);
 
-Console.WriteLine("");
 Console.Write("Результат: ");
 if (n >= 1 & n <= 5) Console.Write("Рабочий день :( ");
 else Console.Write("Ура!Выходной!");

@@ -1,10 +1,9 @@
 ﻿string str = "";
 int n;
 
-Console.WriteLine("");
 do
 {
-    Console.Write("Введите число: ");
+    Console.Write("Введите 3-х значное число: ");
     while (int.TryParse(str = Console.ReadLine()!, out n) == false) 
     {
 
@@ -24,5 +23,4 @@ do
 n /= 10;
 n %= 10;
 
-Console.WriteLine("");
 Console.WriteLine("Цифра 2-го разряда: [" + n + "]");
